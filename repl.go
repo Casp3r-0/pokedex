@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"os"
 	"strings"
+
+	"github.com/Cap3r-0/pokedex/internal/pokeapi"
 )
 
 type config struct {
