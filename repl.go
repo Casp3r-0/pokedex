@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"go/doc/comment"
 	"os"
 	"strings"
 
@@ -90,6 +91,11 @@ func getCommands() map[string]cliCommand {
 			name:        "catch <pokemon_name>",
 			description: "Attempt to catch a Pokemon",
 			callback:    commandCatch,
+		},
+		"inspect": {
+			name:        "inspect <pokemon_name>",
+			description: "View details about a caught pokemon",
+			callback:    commandInspect,
 		},
 	}
 }
